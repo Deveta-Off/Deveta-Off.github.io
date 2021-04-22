@@ -1,1 +1,0 @@
-# Deveta-Off.github.io
