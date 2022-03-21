@@ -1,0 +1,47 @@
+body{ /*body bg, default margin, fonts*/
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+.topnav{ /*top naviguation*/
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color:#1e3799;
+}
+.logo{ /*top naviguation - logo*/
+    background-image: url("images/logo.jpg");
+    background-size:cover;
+    width: 70px;
+    height: 70px; 
+}
+.topnav a{ /*top naviguation - buttons*/
+    color: white;
+    transition: background-color 150ms linear;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.topnav a:hover{ /*top naviguation - buttons when hovering*/
+    background-color: #4a69bd;
+    transition: background-color 150ms linear;
+}
+.topnav a div { /*top naviguation - adapting buttons text*/
+    width: 200px;
+    text-align: center;
+}
+
+.project_div{ /*First project*/
+	overflow: auto;
+	margin: 50px 50px 50px ;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	transition: box-shadow 250ms;
+}
+.project_div:hover{ /*First project when hovering*/
+	box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.first_proj_logo{ /*First project logo*/
+    width: 100px;
+    height: 100px; 
+}
