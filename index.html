@@ -1,26 +1,61 @@
 <html>
-    <head>
-        <title>Accueil</title>
-        <link href="CSS/index.css" rel="stylesheet">
-    </head>
-    <body>
+	<head>
+		<title>Deveta</title>
+        <link href="CSS/templates.css" rel="stylesheet"> <!--Templates (titles, projects ...)-->
+        <link href="CSS/main.css" rel="stylesheet"> <!--Everything else-->
+	</head>
+	<body>
 		<!--Top naviguation-->
         <div class="topnav">
-            <a href="./index.html"><img src="./images/logo.jpg" class="home_logo"></a>
-            <a href="./projects.html"><div>Projets</div></a>
-            <a href="./contact.html"><div>Contact</div></a>
+            <a href="#projects"><div>Projets</div></a>
+            <a href="#contact"><div>Contact</div></a>
         </div>
-		
-		<!--About part-->
-		<div class="about_text">
-			<img src="images/logo.jpg" class="about_logo">
-			Je m'appelle Théo, j'ai actuellement <script>document.write(new Date().getFullYear() - 2004)</script> ans, 
-			et je suis un développeur plus indépendant (pour l'instant). 
-            <br>J'adore découvrir et apprendre de nouvelles choses, que ce soit en programmation ou autre. 
-            Je développe actuellement sur Unity, que ce soit des jeux vidéo ou autre.
+
+        <!--Home (logo, title, ...)-->
+        <h1>Deveta</h1>
+        <img src="img/logo.jpg" alt="Logo twitter car j'ai pas de photo cool de moi" class="home_logo"/>
+        <p>
+            Je m'appelle Théo, j'ai actuellement <script>document.write(new Date().getFullYear() - 2004)</script> ans, et je suis actuellement en terminale générale.
+            <br>Cherchant à étudier dans le dev, j'ai pu me permettre de créer divers projets personnels, 
+            <br>qui sont pour la plupart des jeux. J'ai donc essentiellement programmé sur Unity (en C#), 
+            <br>mais j'ai aussi eu l'occasion de découvrir d'autres langages (Python, JS, etc.)
+        </p>
+
+        <!--Projects-->
+        <h1 class="title">Projets</h1>
+        <div id="projects"> 
+			<a href="https://deveta.itch.io/dino-chrome-game" class="project_div">
+				<div class="top_proj_div"><p>Dino Chrome Game Remaster</p></div>
+				<img src="img/projects_logos/first_project_logo.png" class="proj_logo"/>
+			</a>
+	
+			<a href="https://deveta.itch.io/dino-chrome-game" class="project_div">
+				<div class="top_proj_div"><p>Enorme Et Sec Sim Remaster</p></div>
+				<img src="img/projects_logos/second_project_logo.png" class="proj_logo"/>
+			</a>
+
+			<a href="https://deveta.itch.io/dino-chrome-game" class="project_div">
+				<div class="top_proj_div"><p>Morpion (c'est tout)</p></div>
+				<img src="img/projects_logos/third_project_logo.png" class="proj_logo"/>
+			</a>
+			
+			<a href="https://deveta.itch.io/dino-chrome-game" class="project_div">
+				<div class="top_proj_div"><p>Cell : the adventure</p></div>
+				<img src="img/projects_logos/fourth_project_logo.png" class="proj_logo"/>
+			</a>
 		</div>
-		
-        <div class = "spacer"></div>
-    </body>
+
+		<!--Contact (can use style within HTML for img resizing)-->
+		<h1 class="title">Contact</h1>
+		<div id="contact">
+			<p>
+				<img src="img/contact_logos/twitter.png" style="width: 100px; height: 100px; border-radius: 50% 50%/50% 50%;"/>
+				<a href="https://twitter.com/Deveta_">@Deveta_</a>
+			</p>
+			<p>
+				<img src="img/contact_logos/discord.png" style="width: 100px; height: 100px; border-radius: 50% 50%/50% 50%;"/>
+				<a href="https://discordapp.com">Deveta#4164</a>
+			</p>
+		</div>
+	</body>
 </html>
-<!--https://pavellaptev.medium.com/css-weekly-2-an-image-on-the-left-text-on-the-left-a5e59b2acdb5-->

@@ -1,0 +1,80 @@
+body{ /*body bg, default margin, fonts*/
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    background-color: #23272A;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*------------------------------TITLES DEFAULT STYLE---------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+.title{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-------------------------------PROJECTS DIVS STYLE---------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+#projects{ /*General projects section*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.project_div{ /*Margin so each project can have space*/
+    margin: 2%;
+}
+.proj_logo{ /*Logo of the project default resize*/
+	width: 200px;
+	height: 200px;
+    border-radius: 50% 50%/50% 50%;
+    transition: filter 0.5s;
+}
+.top_proj_div{ /*The div linking to the project ; staying on top of project div*/
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50%/50% 50%;
+    position: absolute;
+    opacity: 0;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+.top_proj_div p{
+    position: relative;
+    top: 40%;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 20px;
+}
+.project_div:hover > .top_proj_div{ /*When hovering the project div, it animates to link div height*/
+    height: 200px;
+    background-color: #5865F2;
+    opacity: 0.5;
+}
+.project_div:hover > .proj_logo{ /*When hovering the project div, it blurs the project logo*/
+    filter: blur(4px);
+}
+.project_div:hover > .top_proj_div p{ /*When hovering the project div, it lets the text have a nice opacity*/
+    opacity: 1;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*--------------------------------CONTACT DIVs STYLE---------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+#contact{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+#contact p{
+    margin: 2%;
+}
+#contact p a{
+    text-decoration: none;
+    color: #5865F2;
+    display: table-cell;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
